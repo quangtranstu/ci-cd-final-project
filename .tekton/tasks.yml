@@ -6,7 +6,7 @@ spec:
   description: This task will clean up a workspace by deleting all the files.
   workspaces:
     - name: source
-steps:
+  steps:
     - name: nosetests
       image: python:3.9-slim
       workingDir: $(workspaces.source.path)
